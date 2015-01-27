@@ -5,5 +5,18 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="facebook_app_id">605136159506121</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">News Feed</string>
+    <string name="title_section1">Saved Articles</string>
+    <string name="title_section2">News Feed</string>
+    <string name="title_section3">Preferences</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="feedback_support">Feedback &amp; Support</string>
+    <string name="title_activity_article_spinner">ArticleSpinner</string>
 
 </resources>

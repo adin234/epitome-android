@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="org.mojojo.epitome.ArticleSpinner$PlaceholderFragment" >
+
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/epitome" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lacus eu urna pellentesque, nec semper felis fermentum. Praesent a arcu sodales, ultrices mi sed, consequat neque. Praesent orci massa, pellentesque id nisi tincidunt, fringilla tincidunt arcu. Vestibulum lacinia volutpat interdum. Donec ultrices, dui id blandit consequat, dolor tellus tincidunt nunc, at aliquet est purus vitae est. Vestibulum condimentum, lorem aliquam congue cursus, magna libero rhoncus felis, mollis euismod ex arcu ac purus. Nunc eu arcu sed lorem vulputate tempor. Cras eleifend tincidunt neque, vitae gravida neque hendrerit at. Fusce nec pretium nunc. Phasellus consectetur sagittis risus a rutrum. Vivamus lacinia sem est, sit amet euismod purus condimentum sed. Mauris viverra quam eu libero consequat scelerisque." />
+
+    </LinearLayout>
+
+</LinearLayout>

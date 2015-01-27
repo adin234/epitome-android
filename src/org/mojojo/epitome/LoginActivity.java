@@ -15,6 +15,7 @@ public class LoginActivity extends Activity {
 	private static final String TAG = "LoginActivity";
 	
 	private UiLifecycleHelper uiHelper;
+	private Boolean change = false;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,10 @@ public class LoginActivity extends Activity {
     
     private void onSessionStateChange(Session session, SessionState state, Exception exception) {
         if (state.isOpened()) {
+        	Intent intent = new Intent(this, LoadingActivity.class);
+        	intent.setFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY);
+        	this.startActivity(intent);
+        	finish();
             Log.i(TAG, "Logged in...");
         } else if (state.isClosed()) {
             Log.i(TAG, "Logged out...");
@@ -45,6 +50,7 @@ public class LoginActivity extends Activity {
         @Override
         public void call(Session session, SessionState state, Exception exception) {
             onSessionStateChange(session, state, exception);
+        	change = true;
         }
     };
     
@@ -52,6 +58,12 @@ public class LoginActivity extends Activity {
     public void onResume() {
         super.onResume();
         uiHelper.onResume();
+        if(Session.getActiveSession().getState().isOpened() && !change) {
+        	Intent intent = new Intent(this, LoadingActivity.class);
+        	intent.setFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY);
+        	this.startActivity(intent);
+        	finish();
+        }
     }
 
     @Override
